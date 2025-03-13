@@ -1,0 +1,27 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    "users": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    "team_members": {
+      ".read": "auth != null",
+      ".write": "auth != null && root.child('users').child(auth.uid).child('role').val() == 'primary_admin'"
+    },
+    "attendance": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('users').child(auth.uid).child('role').val() == 'primary_admin' || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+    },
+    "equipment": {
+      ".read": "auth != null",
+      ".write": "auth != null && (root.child('users').child(auth.uid).child('role').val() == 'primary_admin' || root.child('users').child(auth.uid).child('role').val() == 'admin')"
+    },
+    "suggestions": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
+}

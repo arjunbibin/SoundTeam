@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "34592295139",
+    "firebase_url": "https://sound-team-76c92-default-rtdb.firebaseio.com",
+    "project_id": "sound-team-76c92",
+    "storage_bucket": "sound-team-76c92.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34592295139:android:4eeb134ba9d486d545ddd6",
+        "android_client_info": {
+          "package_name": "com.arjun.soundteam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxzuYksWLxkXN8TL4eDsiJid-tuta8wr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
